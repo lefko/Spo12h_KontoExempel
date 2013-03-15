@@ -1,0 +1,9 @@
+Q:\AL_Dropbox\Dropbox\SPO12h\AL_Visual Studio 2010 Files\Projects\SPO12h_VS Projects\Programmering 1\Exmpel fr Lektion\KontoExempel\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+Q:\AL_Dropbox\Dropbox\SPO12h\AL_Visual Studio 2010 Files\Projects\SPO12h_VS Projects\Programmering 1\Exmpel fr Lektion\KontoExempel\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+Q:\AL_Dropbox\Dropbox\SPO12h\AL_Visual Studio 2010 Files\Projects\SPO12h_VS Projects\Programmering 1\Exmpel fr Lektion\KontoExempel\ClassLibrary1\bin\Debug\KontoExempel.exe
+Q:\AL_Dropbox\Dropbox\SPO12h\AL_Visual Studio 2010 Files\Projects\SPO12h_VS Projects\Programmering 1\Exmpel fr Lektion\KontoExempel\ClassLibrary1\bin\Debug\nunit.framework.dll
+Q:\AL_Dropbox\Dropbox\SPO12h\AL_Visual Studio 2010 Files\Projects\SPO12h_VS Projects\Programmering 1\Exmpel fr Lektion\KontoExempel\ClassLibrary1\bin\Debug\KontoExempel.pdb
+Q:\AL_Dropbox\Dropbox\SPO12h\AL_Visual Studio 2010 Files\Projects\SPO12h_VS Projects\Programmering 1\Exmpel fr Lektion\KontoExempel\ClassLibrary1\bin\Debug\nunit.framework.xml
+Q:\AL_Dropbox\Dropbox\SPO12h\AL_Visual Studio 2010 Files\Projects\SPO12h_VS Projects\Programmering 1\Exmpel fr Lektion\KontoExempel\ClassLibrary1\obj\Debug\ResolveAssemblyReference.cache
+Q:\AL_Dropbox\Dropbox\SPO12h\AL_Visual Studio 2010 Files\Projects\SPO12h_VS Projects\Programmering 1\Exmpel fr Lektion\KontoExempel\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+Q:\AL_Dropbox\Dropbox\SPO12h\AL_Visual Studio 2010 Files\Projects\SPO12h_VS Projects\Programmering 1\Exmpel fr Lektion\KontoExempel\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

@@ -1,0 +1,5 @@
+Q:\AL_Dropbox\Dropbox\SPO12h\AL_Visual Studio 2010 Files\Projects\SPO12h_VS Projects\Programmering 1\Exmpel fr Lektion\KontoExempel\KontoExempel\obj\x86\Debug\ResolveAssemblyReference.cache
+Q:\AL_Dropbox\Dropbox\SPO12h\AL_Visual Studio 2010 Files\Projects\SPO12h_VS Projects\Programmering 1\Exmpel fr Lektion\KontoExempel\KontoExempel\bin\Debug\KontoExempel.exe
+Q:\AL_Dropbox\Dropbox\SPO12h\AL_Visual Studio 2010 Files\Projects\SPO12h_VS Projects\Programmering 1\Exmpel fr Lektion\KontoExempel\KontoExempel\bin\Debug\KontoExempel.pdb
+Q:\AL_Dropbox\Dropbox\SPO12h\AL_Visual Studio 2010 Files\Projects\SPO12h_VS Projects\Programmering 1\Exmpel fr Lektion\KontoExempel\KontoExempel\obj\x86\Debug\KontoExempel.exe
+Q:\AL_Dropbox\Dropbox\SPO12h\AL_Visual Studio 2010 Files\Projects\SPO12h_VS Projects\Programmering 1\Exmpel fr Lektion\KontoExempel\KontoExempel\obj\x86\Debug\KontoExempel.pdb
