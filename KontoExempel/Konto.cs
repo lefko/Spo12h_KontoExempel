@@ -15,22 +15,21 @@ namespace KontoExempel
         // Konstruktorer
 
         // Default konstruktor
-        public Konto()
+        public Konto():this("Kontonummer saknas", 100)
         {
-            saldo = 100;
-            kontoNummer = "Kontonummer saknas";
+            Console.WriteLine("\nDefaultkonsturktor använd");
         }
 
-        public Konto(string knr)
+        public Konto(string knr):this(knr, 100)
         {
-            saldo = 100;
-            kontoNummer = knr;
+            Console.WriteLine("\nKonstruktor som tar emot endast kontonummer använd");
         }
 
         public Konto(string knr, double belopp)
         {
             kontoNummer = knr;
             saldo = belopp;
+            Console.WriteLine("\nKonstruktor som tar både belopp och kontonummer Använd");
         }
         public virtual bool Uttag(double belopp)
         {
