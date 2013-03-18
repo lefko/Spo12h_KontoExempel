@@ -9,9 +9,26 @@ namespace KontoExempel
     {
         static void Main(string[] args)
         {
-            //Konto mittKonto;
-            //mittKonto = new Konto();
+
+            //SparKonto sKonto = new SparKonto("123-456", 5000);
+            //Console.WriteLine(sKonto.ToString());
+            //sKonto.Uttag(2000);
+            //Console.WriteLine(sKonto.ToString());
+            //sKonto.Antal
+
+            
+            //KreditKonto kKonto = new KreditKonto("123-3456", -15);
+            //Console.WriteLine(kKonto.ToString());
+
+            
+            // Konto mittKonto;
+            //Konto mittKonto = new Konto("123-1234");
+            //mittKonto.Saldo = 3000;
+            // Console.WriteLine("Kontonummer: " + mittKonto.KontoNummer);
+            // double belopp = mittKonto.Saldo;
+            //mittKonto.KontoNummer = "123-456";
             //Console.WriteLine(mittKonto.ToString());
+            // Console.WriteLine(belopp);
 
             //SparKonto sKonto = new SparKonto("23456", 2000);
             //Console.WriteLine(sKonto.ToString());
@@ -66,8 +83,8 @@ namespace KontoExempel
 
             //KreditKonto kKonto = new KreditKonto();
             //KreditKonto kKonto2 = new KreditKonto("1234-567", 10000);
-            KreditKonto kKonto3 = new KreditKonto("234-678", 5300, 15000);
-            Console.WriteLine(kKonto3.ToString());
+            //KreditKonto kKonto3 = new KreditKonto("234-678", 5300, 15000);
+            //Console.WriteLine(kKonto3.ToString());
      
             
             

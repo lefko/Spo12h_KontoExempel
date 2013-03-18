@@ -11,27 +11,42 @@ namespace KontoExempel
 
         #region Konstruktorer
 
-        public KreditKonto():base()
+        public KreditKonto()
+            : base()
         {
-            kredit = 0;
+            Kredit = 0;
             Console.WriteLine("KreditKonto def konstruktor använd");
         }
 
-        public KreditKonto(string knr, double kred):base(knr)
+        public KreditKonto(string knr, double kred)
+            : base(knr)
         {
-            kredit = kred;
+            Kredit = kred;
             Console.WriteLine("KreditKonto konstruktor som tar kontonummer använd");
         }
 
-        public KreditKonto(string knr, double belopp, double kred):base(knr, belopp)
+        public KreditKonto(string knr, double belopp, double kred)
+            : base(knr, belopp)
         {
-            kredit = kred;
+            Kredit = kred;
             Console.WriteLine("Kreditkonto konstruktor som tar kontonummer och saldo använd");
         }
 
         #endregion
 
-        
+        #region Properties
+
+        public double Kredit
+        {
+            get { return kredit; }
+            set
+            {
+                if (value >= 0)
+                    kredit = value;
+            }
+        }
+        #endregion
+
         public void SetKredit(double b)
         {
             kredit = b;

@@ -16,24 +16,29 @@ namespace KontoExempel
 
         #endregion
 
-        #region Gettes and Setters
-
-        public void SetKontoNummer(string knr)
+        public double Saldo
         {
-            kontoNummer = knr;
+            get { return saldo; }
+            set { saldo = value; }
         }
 
-        public string GetKontoNummer()
+        public string KontoNummer
         {
-            return kontoNummer;
+            get { return kontoNummer; }
+            set
+            {
+                if (value[3] == '-')
+                    kontoNummer = value;
+            }
         }
 
-        #endregion
+        //public double Saldo { get; set; }
+
 
         #region Konstruktorer
 
         // Default konstruktor
-        public Konto():this("Kontonummer saknas", 100)
+        public Konto():this("xxxx-xxx", 100)
         {
             Console.WriteLine("\nDefaultkonsturktor använd");
         }
@@ -45,7 +50,7 @@ namespace KontoExempel
 
         public Konto(string knr, double belopp)
         {
-            kontoNummer = knr;
+            KontoNummer = knr;
             saldo = belopp;
             Console.WriteLine("\nKonstruktor som tar både belopp och kontonummer Använd");
         }
@@ -70,11 +75,6 @@ namespace KontoExempel
         public void Insattning(double belopp)
         {
             saldo += belopp;
-        }
-
-        public double SaldoBesked()
-        {
-            return saldo; //Skicka tillbaka en kopia av innehållet i saldo.
         }
 
         public override string ToString()
