@@ -11,6 +11,11 @@ namespace KontoExempel.Tests
     class KreditKontoTests
     {
         [Test]
+        public void CreateKreditKontoDefConstructor()
+        {
+            KreditKonto kKonto = new KreditKonto();
+            StringAssert.Contains("Kontonummer saknas", kKonto.GetKontoNummer());
+        }
 
     }
 }

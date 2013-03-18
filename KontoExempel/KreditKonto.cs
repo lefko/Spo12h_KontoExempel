@@ -5,12 +5,13 @@ using System.Text;
 
 namespace KontoExempel
 {
-    class KreditKonto : Konto
+    public class KreditKonto : Konto
     {
         private double kredit;
 
         public KreditKonto():base()
         {
+            kredit = 0;
             Console.WriteLine("KreditKonto def konstruktor använd");
         }
 
