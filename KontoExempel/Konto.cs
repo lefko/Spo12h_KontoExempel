@@ -12,7 +12,7 @@ namespace KontoExempel
         private string kontoNummer;
         protected double saldo;
 
-        // Konstruktorer
+        #region Konstruktorer
 
         // Default konstruktor
         public Konto():this("Kontonummer saknas", 100)
@@ -31,6 +31,15 @@ namespace KontoExempel
             saldo = belopp;
             Console.WriteLine("\nKonstruktor som tar både belopp och kontonummer Använd");
         }
+
+        #endregion
+
+        public override string ToString()
+        {
+            string s = "\nKontonummer: " + kontoNummer + "\nSaldo: " + saldo;
+            return s;
+        }
+
         public virtual bool Uttag(double belopp)
         {
             if (belopp <= saldo)

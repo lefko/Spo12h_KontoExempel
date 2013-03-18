@@ -11,6 +11,10 @@ namespace KontoExempel
         {
             //Konto mittKonto;
             //mittKonto = new Konto();
+            //Console.WriteLine(mittKonto.ToString());
+
+            //SparKonto sKonto = new SparKonto("23456", 2000);
+            //Console.WriteLine(sKonto.ToString());
 
             //Konto konto1 = new Konto("1234-567");
 
@@ -60,9 +64,12 @@ namespace KontoExempel
             //Console.WriteLine("Gåre det att ta ut pengar? {0}", ut2);
             //Console.WriteLine("Ditt Saldo på kontot är nu {0} SEK", mittKonto2.SaldoBesked());
 
-            KreditKonto kKonto = new KreditKonto();
-            KreditKonto kKonto2 = new KreditKonto("1234-567", 10000);
+            //KreditKonto kKonto = new KreditKonto();
+            //KreditKonto kKonto2 = new KreditKonto("1234-567", 10000);
             KreditKonto kKonto3 = new KreditKonto("234-678", 5300, 15000);
+            Console.WriteLine(kKonto3.ToString());
+     
+            
             
             //kKonto.SetKredit(10000);
             //kKonto.Insattning(5000);

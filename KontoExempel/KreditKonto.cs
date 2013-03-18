@@ -9,6 +9,8 @@ namespace KontoExempel
     {
         private double kredit;
 
+        #region Konstruktorer
+
         public KreditKonto():base()
         {
             kredit = 0;
@@ -27,6 +29,9 @@ namespace KontoExempel
             Console.WriteLine("Kreditkonto konstruktor som tar kontonummer och saldo använd");
         }
 
+        #endregion
+
+        
         public void SetKredit(double b)
         {
             kredit = b;
@@ -49,6 +54,17 @@ namespace KontoExempel
             {
                 return false;
             }
+        }
+
+        public double TillgangligtBelopp()
+        {
+            return kredit + saldo;
+        }
+
+        public override string ToString()
+        {
+            string s = base.ToString() + "\nKredit: " + kredit;
+            return s;
         }
     }
 }

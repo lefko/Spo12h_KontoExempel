@@ -9,6 +9,8 @@ namespace KontoExempel
     {
         private int antalUttag;
 
+        #region Konstruktorer
+        
         public SparKonto():base()
         {
             antalUttag = 0;
@@ -27,7 +29,13 @@ namespace KontoExempel
             Console.WriteLine("Sparkonotots konstruktor som tar både kontonummer och belopp använd");
         }
 
+        #endregion
 
+        public override string ToString()
+        {
+            string s = base.ToString() + "\nAntal gjorda uttag: " + antalUttag;
+            return s;
+        }
 
         public int GetAntalUttag()
         {
