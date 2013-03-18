@@ -9,8 +9,26 @@ namespace KontoExempel
     {
         // Deklaration av medlemsattribut
 
+        #region Fields / medlemmsattribut
+
         private string kontoNummer;
         protected double saldo;
+
+        #endregion
+
+        #region Gettes and Setters
+
+        public void SetKontoNummer(string knr)
+        {
+            kontoNummer = knr;
+        }
+
+        public string GetKontoNummer()
+        {
+            return kontoNummer;
+        }
+
+        #endregion
 
         #region Konstruktorer
 
@@ -34,11 +52,7 @@ namespace KontoExempel
 
         #endregion
 
-        public override string ToString()
-        {
-            string s = "\nKontonummer: " + kontoNummer + "\nSaldo: " + saldo;
-            return s;
-        }
+        #region Methods
 
         public virtual bool Uttag(double belopp)
         {
@@ -63,14 +77,13 @@ namespace KontoExempel
             return saldo; //Skicka tillbaka en kopia av innehållet i saldo.
         }
 
-        public void SetKontoNummer(string knr)
+        public override string ToString()
         {
-            kontoNummer = knr;
+            string s = "\nKontonummer: " + kontoNummer + "\nSaldo: " + saldo;
+            return s;
         }
 
-        public string GetKontoNummer()
-        {
-            return kontoNummer;
-        }
+        #endregion
+
     }
 }
