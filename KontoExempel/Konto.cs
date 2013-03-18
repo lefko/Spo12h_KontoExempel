@@ -16,6 +16,7 @@ namespace KontoExempel
 
         #endregion
 
+
         public double Saldo
         {
             get { return saldo; }
@@ -32,13 +33,12 @@ namespace KontoExempel
             }
         }
 
-        //public double Saldo { get; set; }
 
 
         #region Konstruktorer
 
         // Default konstruktor
-        public Konto():this("xxxx-xxx", 100)
+        public Konto():this("xxx-xxx", 100)
         {
             Console.WriteLine("\nDefaultkonsturktor använd");
         }
