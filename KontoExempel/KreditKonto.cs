@@ -16,11 +16,13 @@ namespace KontoExempel
 
         public KreditKonto(string knr, double kred):base(knr)
         {
+            kredit = kred;
             Console.WriteLine("KreditKonto konstruktor som tar kontonummer använd");
         }
 
         public KreditKonto(string knr, double belopp, double kred):base(knr, belopp)
         {
+            kredit = kred;
             Console.WriteLine("Kreditkonto konstruktor som tar kontonummer och saldo använd");
         }
 
