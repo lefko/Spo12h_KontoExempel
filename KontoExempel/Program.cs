@@ -9,18 +9,21 @@ namespace KontoExempel
     {
         static void Main(string[] args)
         {
-            Konto mittKonto;
-            mittKonto = new Konto();
+            //Konto mittKonto;
+            //mittKonto = new Konto();
 
-            Konto konto1 = new Konto("1234-567");
+            //Konto konto1 = new Konto("1234-567");
 
-            Konto kont2 = new Konto("2345-333", 2000);
+            //Konto kont2 = new Konto("2345-333", 2000);
 
             //mittKonto.SetKontoNummer("1234-56");
             //mittKonto.Insattning(8000);
             //// double saldot = mittKonto.SaldoBesked();
 
-            //SparKonto sKonto = new SparKonto();
+            SparKonto sKonto = new SparKonto();
+            SparKonto sKonto2 = new SparKonto("12356-456");
+            SparKonto sKonto3 = new SparKonto("1234-567", 1500);
+
             //sKonto.Insattning(3500);
             //sKonto.SetKontoNummer("2345-78");
             //Console.WriteLine("Du har gjort {0} uttag fr kontonr {1}", sKonto.GetAntalUttag(), sKonto.GetKontoNummer());
