@@ -13,8 +13,7 @@ namespace KontoExempel.Tests
         public void SkapaSparKonto()
         {
             var mittSparKonto = new SparKonto();
-            mittSparKonto.SetKontoNummer("1234-56");
-            StringAssert.Contains("1234-56", mittSparKonto.GetKontoNummer());
+            StringAssert.Contains("Kontonummer saknas", mittSparKonto.GetKontoNummer());
         }
 
         [Test]

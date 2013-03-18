@@ -9,6 +9,21 @@ namespace KontoExempel
     {
         private double kredit;
 
+        public KreditKonto():base()
+        {
+            Console.WriteLine("KreditKonto def konstruktor använd");
+        }
+
+        public KreditKonto(string knr, double kred):base(knr)
+        {
+            Console.WriteLine("KreditKonto konstruktor som tar kontonummer använd");
+        }
+
+        public KreditKonto(string knr, double belopp, double kred):base(knr, belopp)
+        {
+            Console.WriteLine("Kreditkonto konstruktor som tar kontonummer och saldo använd");
+        }
+
         public void SetKredit(double b)
         {
             kredit = b;

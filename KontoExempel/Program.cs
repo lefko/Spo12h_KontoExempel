@@ -20,9 +20,9 @@ namespace KontoExempel
             //mittKonto.Insattning(8000);
             //// double saldot = mittKonto.SaldoBesked();
 
-            SparKonto sKonto = new SparKonto();
-            SparKonto sKonto2 = new SparKonto("12356-456");
-            SparKonto sKonto3 = new SparKonto("1234-567", 1500);
+            //SparKonto sKonto = new SparKonto();
+            //SparKonto sKonto2 = new SparKonto("12356-456");
+            //SparKonto sKonto3 = new SparKonto("1234-567", 1500);
 
             //sKonto.Insattning(3500);
             //sKonto.SetKontoNummer("2345-78");
@@ -60,7 +60,9 @@ namespace KontoExempel
             //Console.WriteLine("Gåre det att ta ut pengar? {0}", ut2);
             //Console.WriteLine("Ditt Saldo på kontot är nu {0} SEK", mittKonto2.SaldoBesked());
 
-            //KreditKonto kKonto = new KreditKonto();
+            KreditKonto kKonto = new KreditKonto();
+            KreditKonto kKonto2 = new KreditKonto("1234-567", 10000);
+            KreditKonto kKonto3 = new KreditKonto("234-678", 5300, 15000);
             
             //kKonto.SetKredit(10000);
             //kKonto.Insattning(5000);
