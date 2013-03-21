@@ -11,6 +11,7 @@ namespace KontoExempel
 
         #region Fields / medlemmsattribut
 
+        private static double rate;
         private static int count;
         private string kontoNummer;
         protected double saldo;
@@ -47,6 +48,12 @@ namespace KontoExempel
         public Konto():this("xxx-xxx", 100)
         {
             Console.WriteLine("\nDefaultkonsturktor använd");
+        }
+
+        static Konto()
+        {
+            Console.Write("Ange räntan: ");
+            rate = double.Parse(Console.ReadLine());
         }
 
         public Konto(string knr):this(knr, 100)
