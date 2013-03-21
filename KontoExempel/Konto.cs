@@ -11,11 +11,16 @@ namespace KontoExempel
 
         #region Fields / medlemmsattribut
 
+        private static int count;
         private string kontoNummer;
         protected double saldo;
 
         #endregion
 
+        public static int Count //Statisk Property till statisk medlemsvariabel
+        {
+            get { return count; }
+        }
 
         public double Saldo
         {
@@ -35,6 +40,7 @@ namespace KontoExempel
 
 
 
+
         #region Konstruktorer
 
         // Default konstruktor
@@ -50,6 +56,7 @@ namespace KontoExempel
 
         public Konto(string knr, double belopp)
         {
+            count++;
             KontoNummer = knr;
             saldo = belopp;
             Console.WriteLine("\nKonstruktor som tar både belopp och kontonummer Använd");

@@ -38,6 +38,13 @@ namespace KontoExempel.Tests
         }
 
         [Test]
+        public void AddCountByOneWhenCreatingAccount()
+        {
+            var mittTestKonto = new Konto("123-567", 500);
+            Assert.AreEqual(1, Konto.Count); // ??????
+        }
+
+        [Test]
         public void WithdrawFundsOk()
         {
             var mittKonto = new Konto();

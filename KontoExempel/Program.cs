@@ -35,7 +35,8 @@ namespace KontoExempel
 
             //Konto konto1 = new Konto("1234-567");
 
-            //Konto kont2 = new Konto("2345-333", 2000);
+            Konto kont2 = new Konto("2345-333", 2000);
+            Console.WriteLine("Antal konton skapade: " + Konto.Count);
 
             //mittKonto.SetKontoNummer("1234-56");
             //mittKonto.Insattning(8000);
