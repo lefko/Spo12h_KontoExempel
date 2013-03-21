@@ -7,6 +7,7 @@ namespace KontoExempel
 {
     public class KreditKonto : Konto
     {
+        private static double kreditRate;
         private double kredit;
 
         #region Konstruktorer
@@ -16,6 +17,12 @@ namespace KontoExempel
         {
             Kredit = 0;
             Console.WriteLine("KreditKonto def konstruktor använd");
+        }
+
+        static KreditKonto()
+        {
+            Console.Write("Ange kredit räntan: ");
+            KreditRate = double.Parse(Console.ReadLine());
         }
 
         public KreditKonto(string knr, double kred)
@@ -43,6 +50,16 @@ namespace KontoExempel
             {
                 if (value >= 0)
                     kredit = value;
+            }
+        }
+
+        public static double KreditRate
+        {
+            get { return kreditRate; }
+            set
+            {
+                if (value >= 0)
+                    kreditRate = value;
             }
         }
         #endregion
@@ -78,7 +95,7 @@ namespace KontoExempel
 
         public override string ToString()
         {
-            string s = base.ToString() + "\nKredit: " + kredit;
+            string s = base.ToString() + "\nKredit: " + kredit + "\nKredit ränta: " + KreditRate;
             return s;
         }
     }

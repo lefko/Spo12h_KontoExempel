@@ -17,5 +17,14 @@ namespace KontoExempel.Tests
             StringAssert.Contains("xxx-xxx", kKonto.KontoNummer);
         }
 
+        // Not working have a console read in the static constructor
+        //[Test]
+        //public void SetKreditRateWithStaticMemberField()
+        //{
+        //    var mittTestKKonto = new KreditKonto("123-567", 500, 15000);
+
+        //    Assert.AreEqual(1, Konto.Count); // ??????
+        //}
+
     }
 }
