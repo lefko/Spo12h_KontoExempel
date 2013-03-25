@@ -42,17 +42,16 @@ namespace KontoExempel
             //Console.WriteLine("Antal konton skapade: " + Konto.Count);
 
             KreditKonto kKonto1 = new KreditKonto("2345-333", 15000);
-<<<<<<< HEAD
+
             Console.WriteLine(kKonto1.ToString());
 
             //KreditKonto kKonto2 = new KreditKonto("2345-333", 15000);
             //Console.WriteLine("Räntan på din kredit är: " + KreditKonto.KreditRate);
-=======
             Console.WriteLine("Räntan på din kredit är: " + KreditKonto.KreditRate);
 
             KreditKonto kKonto2 = new KreditKonto("2345-333", 15000);
             Console.WriteLine("Räntan på din kredit är: " + KreditKonto.KreditRate);
->>>>>>> 4d0bfa62ae21487b47e86c7b411bf0ab54e07b1d
+
 
             //mittKonto.SetKontoNummer("1234-56");
             //mittKonto.Insattning(8000);
