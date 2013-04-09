@@ -79,11 +79,9 @@ namespace KontoExempel
 
         public void Menu(out int choise)
         {
-<<<<<<< HEAD
-            Console.WriteLine("\n\nVaälj\n1. Lägg till konto\n3. Skriv ut\n4.Avsluta");
-=======
+
             Console.WriteLine("\n\nVaälj\n1. Lägg till konto\n3. Skrivut\n4.Avsluta");
->>>>>>> feaa45238962ecf02c9a0182d2697a2e1d4bf092
+
 
             choise = int.Parse(Console.ReadLine());
         }
