@@ -113,15 +113,11 @@ namespace KontoExempel
 
             Bank myBank1 = new Bank();
 
-            
-            myBank1.AddKonto();
-            myBank1.AddKonto();
-            myBank1.AddKonto();
-            myBank1.Print();
+            myBank1.Start();
             
 
 
-            Console.ReadLine();
+            // Console.ReadLine();
 
             #region Egna tester
 

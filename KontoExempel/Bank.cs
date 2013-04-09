@@ -51,6 +51,39 @@ namespace KontoExempel
             }
         }
 
+        public void Start()
+        {
+            bool cont = true;
+            int choise;
+
+            while (cont) //samma som att skriva: cont == true
+            {
+                Menu(out choise);
+                switch (choise)
+                {
+                    case 1:
+                        AddKonto();
+                        break;
+                    case 3:
+                        Print();
+                        break;
+                    case 4: 
+                        cont = false;
+                        break;
+                    default:
+                        Console.WriteLine("Felval !!");
+                        break;
+                }
+            }
+        }
+
+        public void Menu(out int choise)
+        {
+            Console.WriteLine("\n\nVaälj\n1. Lägg till konto\n3. Skrivut\n4.Avsluta");
+
+            choise = int.Parse(Console.ReadLine());
+        }
+
         #endregion
     }
 }
