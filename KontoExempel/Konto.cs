@@ -93,7 +93,7 @@ namespace KontoExempel
 
         public override string ToString()
         {
-            string s = "\nKontonummer: " + kontoNummer + "\nSaldo: " + saldo + "\nInöåningsränta: " + rate;
+            string s = "\nKontonummer: " + kontoNummer + "\nSaldo: " + saldo + "\nInlåningsränta: " + rate;
             return s;
         }
 

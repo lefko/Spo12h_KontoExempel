@@ -41,16 +41,16 @@ namespace KontoExempel
             //Konto konto3 = new Konto("2345-333", 2000);
             //Console.WriteLine("Antal konton skapade: " + Konto.Count);
 
-            KreditKonto kKonto1 = new KreditKonto("2345-333", 15000);
+            //KreditKonto kKonto1 = new KreditKonto("2345-333", 15000);
 
-            Console.WriteLine(kKonto1.ToString());
+            //Console.WriteLine(kKonto1.ToString());
 
             //KreditKonto kKonto2 = new KreditKonto("2345-333", 15000);
             //Console.WriteLine("Räntan på din kredit är: " + KreditKonto.KreditRate);
-            Console.WriteLine("Räntan på din kredit är: " + KreditKonto.KreditRate);
+            //Console.WriteLine("Räntan på din kredit är: " + KreditKonto.KreditRate);
 
-            KreditKonto kKonto2 = new KreditKonto("2345-333", 15000);
-            Console.WriteLine("Räntan på din kredit är: " + KreditKonto.KreditRate);
+            //KreditKonto kKonto2 = new KreditKonto("2345-333", 15000);
+            //Console.WriteLine("Räntan på din kredit är: " + KreditKonto.KreditRate);
 
 
             //mittKonto.SetKontoNummer("1234-56");
@@ -110,6 +110,14 @@ namespace KontoExempel
             //kKonto.Uttag(12000);
             //Console.WriteLine("Uttag gjort. Saldobesked: " + kKonto.SaldoBesked());
             //Console.WriteLine("Din kredit är: " + kKonto.GetKredit());
+
+            Bank myBank1 = new Bank();
+
+            
+            myBank1.AddKonto();
+            myBank1.AddKonto();
+            myBank1.AddKonto();
+            myBank1.Print();
             
 
 
