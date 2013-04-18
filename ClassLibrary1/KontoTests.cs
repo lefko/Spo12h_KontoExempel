@@ -3,17 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using NUnit.Framework;
+using KontoExempel;
 
 namespace KontoExempel.Tests
 {
     [TestFixture]
     public class KontoTests
     {
-        //[Test]
-        //public void AFirstTest()
-        //{
-        //    Assert.IsTrue(true, "true is true!");
-        //}
+        [Test]
+        public void AFirstTest()
+        {
+            Assert.IsTrue(true, "true is true!");
+        }
 
         [Test]
         public void CreateAccountWhithoutAccountNr()
@@ -40,7 +41,7 @@ namespace KontoExempel.Tests
         [Test]
         public void AddCountByOneWhenCreatingAccount()
         {
-            var mittTestKonto = new Konto("123-567", 500);
+            Konto mittTestKonto = new Konto("123-567", 500);
             Assert.AreEqual(1, Konto.Count); // ??????
         }
 

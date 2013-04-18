@@ -52,8 +52,9 @@ namespace KontoExempel
 
         static Konto()
         {
-            Console.Write("Ange räntan: ");
-            rate = double.Parse(Console.ReadLine());
+            // Console.Write("Ange räntan: ");
+            // rate = double.Parse(Console.ReadLine());
+            rate = 5;
         }
 
         public Konto(string knr):this(knr, 100)
@@ -93,11 +94,17 @@ namespace KontoExempel
 
         public override string ToString()
         {
-            string s = "\nKontonummer: " + kontoNummer + "\nSaldo: " + saldo + "\nInlåningsränta: " + rate;
+            string s = "\nKontonummer: " + kontoNummer + "\nSaldo: " + saldo + "\nInlåningsränta: "+rate;
             return s;
         }
 
         #endregion
 
+        ~Konto()
+        {
+            Console.WriteLine("I kontos destructor");
+        }
     }
+
+   
 }

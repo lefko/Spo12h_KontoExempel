@@ -21,8 +21,9 @@ namespace KontoExempel
 
         static KreditKonto()
         {
-            Console.Write("Ange kredit räntan: ");
-            KreditRate = double.Parse(Console.ReadLine());
+            //Console.Write("Ange kredit räntan: ");
+            //KreditRate = double.Parse(Console.ReadLine());
+            KreditRate = 3;
         }
 
         public KreditKonto(string knr, double kred)
@@ -97,6 +98,11 @@ namespace KontoExempel
         {
             string s = base.ToString() + "\nKredit: " + kredit + "\nKredit ränta: " + KreditRate;
             return s;
+        }
+
+        public new void Insattning(double belopp) //En dold metod
+        {
+            Saldo += belopp*2;
         }
     }
 }

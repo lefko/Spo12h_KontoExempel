@@ -41,6 +41,28 @@ namespace KontoExempel
             }
         }
 
+        public void AddKreditKonto()
+        {
+            string knr;
+            double saldo;
+            double kredit;
+
+            // Leta upp första lediga plats
+            int i = Array.IndexOf(konton, null);
+            //Lägg till om det finns plats
+            if (i != -1)
+            {
+                Console.Write("Kontonummer: ");
+                knr = Console.ReadLine();
+                Console.Write("Saldo: ");
+                saldo = double.Parse(Console.ReadLine());
+                Console.Write("Kredit: ");
+                kredit = double.Parse(Console.ReadLine());
+                konton[i] = new KreditKonto(knr, saldo, kredit);
+            }
+
+        }
+
         public void Print()
         {
             Console.WriteLine("Banken har {0} konton.\n", Konto.Count);
@@ -64,6 +86,9 @@ namespace KontoExempel
                     case 1:
                         AddKonto();
                         break;
+                    case 2:
+                        AddKreditKonto();
+                        break;
                     case 3:
                         Print();
                         break;
@@ -80,8 +105,7 @@ namespace KontoExempel
         public void Menu(out int choise)
         {
 
-            Console.WriteLine("\n\nVaälj\n1. Lägg till konto\n3. Skrivut\n4.Avsluta");
-
+            Console.WriteLine("\n\nVaälj\n1. Lägg till konto\n2. Lägg till Kredit Konto\n3. Skrivut\n4.Avsluta");
 
             choise = int.Parse(Console.ReadLine());
         }
