@@ -5,7 +5,7 @@ using System.Text;
 
 namespace KontoExempel
 {
-    public class Konto
+    public abstract class Konto
     {
         // Deklaration av medlemsattribut
 
@@ -97,6 +97,8 @@ namespace KontoExempel
             string s = "\nKontonummer: " + kontoNummer + "\nSaldo: " + saldo + "\nInlåningsränta: "+rate;
             return s;
         }
+
+        public abstract void Metod();
 
         #endregion
 

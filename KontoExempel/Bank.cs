@@ -37,7 +37,7 @@ namespace KontoExempel
                 knr = Console.ReadLine();
                 Console.Write("Saldo: ");
                 saldo = double.Parse(Console.ReadLine());
-                konton[i] = new Konto(knr, saldo);
+                // konton[i] = new Konto(knr, saldo);
             }
         }
 

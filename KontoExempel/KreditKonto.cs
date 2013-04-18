@@ -104,5 +104,10 @@ namespace KontoExempel
         {
             Saldo += belopp*2;
         }
+
+        public override void Metod()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -51,5 +51,10 @@ namespace KontoExempel
                 antalUttag++;
             return ut;
         }
+
+        public override void Metod()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
